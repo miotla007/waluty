@@ -13,13 +13,28 @@
   <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
   <link rel="stylesheet" href="css/app.css"/>
   <script src="bower_components/html5-boilerplate/js/vendor/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
   <ul class="menu">
     <li><a href="#/view1">Home</a></li>
   </ul>
-Search: <input ng-model="query">
-Sort: <input ng-model="orderProp">
+<!-- Search: <input ng-model="query">
+Sort: <input ng-model="orderProp"> -->
+<div class="row">
+<div class="col-xs-6 col-md-2">
+<form role="form">
+  <div class="form-group">
+    <label>Search</label>
+    <input ng-model="query" type="text" class="form-control" id="exampleInputEmail1" placeholder="Search">
+  </div>
+  <div class="form-group">
+    <label>Sort</label>
+    <input ng-model="orderProp" type="text" class="form-control" id="exampleInputPassword1" placeholder="Sort">
+  </div>
+</form>
+</div>
+</div>
 <!--   <table>
 	<tr ng-repeat="w in waluty">
 		<td>{{w.I}}</td>

@@ -1,8 +1,19 @@
-<table>
+<table class="table table-hover table-striped">
+<thead>
+<tr>
+	<th>I</th>
+	<th>B</th>
+	<th>S</th>
+	<th>P</th>
+</tr>
+</thead>
+	<tbody>
 	<tr class="example-animate-container" ng-repeat="w in waluty | orderBy:orderProp | filter:query">
-		<td class="animate-repeat">| {{w.I}} |</td>
-		<td class="animate-repeat">| {{w.B}} |</td>
-		<td class="animate-repeat">| {{w.S}} |</td>
-		<td class="animate-repeat">| {{w.P}} |</td>
+
+		<td class="animate-repeat">{{w.I}}</td>
+		<td class="animate-repeat">{{w.B}}</td>
+		<td class="animate-repeat">{{w.S}}</td>
+		<td class="animate-repeat">{{w.P}}</td>
 	</tr>
+	</tbody>
 </table>
