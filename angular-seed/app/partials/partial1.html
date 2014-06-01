@@ -8,12 +8,12 @@
 </tr>
 </thead>
 	<tbody>
-	<tr class="example-animate-container" ng-repeat="w in waluty | orderBy:orderProp | filter:query">
+	<tr ng-repeat="w in waluty | orderBy:orderProp | filter:query">
 
-		<td class="animate-repeat">{{w.I}}</td>
-		<td class="animate-repeat">{{w.B}}</td>
-		<td class="animate-repeat">{{w.S}}</td>
-		<td class="animate-repeat">{{w.P}}</td>
+		<td>{{w.I}}</td>
+		<td>{{w.B}}</td>
+		<td>{{w.S}}</td>
+		<td>{{w.P}}</td>
 	</tr>
 	</tbody>
 </table>
